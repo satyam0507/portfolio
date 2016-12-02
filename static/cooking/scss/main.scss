@@ -2,18 +2,18 @@
  * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
  * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) 
  */
 
 // Core variables and mixins
- @import "variablesOverride.scss";   
- @import "bootstrap4_scss/variables";
- 
- @import "bootstrap4_scss/mixins";
+ @import "variablesOverride.scss";        
+ @import "bootstrap4_scss/variables";                                                                     
+   
+ @import "bootstrap4_scss/mixins";  
 
 // // Reset and dependencies
  @import "bootstrap4_scss/normalize";
- @import "bootstrap4_scss/print";
+ @import "bootstrap4_scss/print";  
 
 // // Core CSS
  @import "bootstrap4_scss/reboot";
@@ -30,8 +30,8 @@
 // @import "bootstrap4_scss/dropdown";
 // @import "bootstrap4_scss/button-group";
 // @import "bootstrap4_scss/input-group";
-// @import "bootstrap4_scss/custom-forms";
-// @import "bootstrap4_scss/nav";
+// @import "bootstrap4_scss/custom-forms";   
+ @import "bootstrap4_scss/nav";
 // @import "bootstrap4_scss/navbar";
  @import "bootstrap4_scss/card";
 // @import "bootstrap4_scss/breadcrumb";

@@ -6,7 +6,7 @@ $(function () {
         if (target.length) {
             event.preventDefault();
             $('html,body').animate({
-                scrollTop: target.offset().top - 64
+                scrollTop: target.offset().top
             }, 300);
         }
     });
