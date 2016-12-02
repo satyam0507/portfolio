@@ -1,0 +1,22 @@
+{
+  "name": "landing_page",
+  "version": "0.1.0",
+  "description": "landing page which will provide launching platform for the pages design in various framework like polymer,angular etc.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Satyam Singh",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "express-handlebars": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^2.3.2",
+    "run-sequence": "^1.2.2"
+  }
+}
