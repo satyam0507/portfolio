@@ -2057,6 +2057,14 @@ body {
   font-family: 'roboto';
   background: url("../../assets/image/my-site.png"); }
 
+@media (max-width: 720px) {
+  #header.open {
+    width: 300px !important;
+    will-change: transfrom;
+    transform: translateX(-102%); }
+  .main-container.open {
+    padding-left: 0 !important; } }
+
 #header {
   background: #fff;
   width: 150px;

@@ -70,7 +70,20 @@ body{
     background: url('../../assets/image/my-site.png')
 }
 // header
-
+@media (max-width:720px){
+    #header{
+        &.open{
+            width: 300px!important;
+            will-change: transfrom;
+            transform: translateX(-102%);
+        }
+}
+.main-container{
+    &.open{
+        padding-left: 0!important;
+    }
+}
+}
 #header{
     background: $headerColor;
     // background: pink;
