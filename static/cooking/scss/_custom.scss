@@ -1,7 +1,9 @@
 @import "customVariable";
 
 // scss type 1 
-
+    .white{
+        color:white;
+    }
 .flex{
     display: flex;  
     &.center{
@@ -12,6 +14,9 @@
     }
     &.flex-c{
         flex-direction: column;
+    }
+    &.end{
+        align-items: flex-end;
     }
 }
 .inline-flex{
@@ -71,13 +76,24 @@ body{
 }
 // header
 @media (max-width:720px){
+    
     #header{
         &.open{
-            width: 300px!important;
+            width: 90%!important;
             will-change: transfrom;
             transform: translateX(-102%);
+            box-shadow: 2px 0 12px rgba(0,0,0,0.4);
         }
 }
+.quoteContainer{
+    .quote{
+        font-size:30px!important;
+    }
+}
+#contact{
+    font-size: 20px!important;
+}
+
 .main-container{
     &.open{
         padding-left: 0!important;
@@ -86,6 +102,7 @@ body{
 }
 #header{
     background: $headerColor;
+    pointer-events: auto;
     // background: pink;
     width: 150px;
     height: 100vh;
@@ -226,4 +243,62 @@ body{
             font-size: 40px;
             font-weight: 300;
         }
+}
+
+//side nav
+
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index:100;
+}
+
+.side-nav--visible {
+  pointer-events: auto;
+}
+
+.side-nav::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 0.3s cubic-bezier(0,0,0.3,1);
+}
+
+.side-nav__container {
+  position: relative!important;
+  
+  max-width: 400px!important;
+  height: 100%;
+
+//   display: flex;
+//   flex-direction: column;
+//   will-change: transform;
+}
+
+.side-nav--animatable .side-nav__container {
+  transition: transform 0.13s cubic-bezier(0,0,0.3,1);
+}
+
+.side-nav--visible.side-nav--animatable .side-nav__container {
+  transition: transform 0.33s cubic-bezier(0,0,0.3,1);
+}
+
+.side-nav--visible::before {
+  opacity: 1;
+}
+
+.side-nav--visible .side-nav__container {
+  transform: none!important;
 }

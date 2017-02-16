@@ -3,6 +3,6 @@
     "scssFile":"main.scss",
     "cssPath":"./static/compiled/css/",
     "esJsPath":"./static/cooking/es6/",
-    "esJsFile":"main.js",
+    "esJsFile":"*.js",
     "jsPath":"./static/compiled/js/"
 }
