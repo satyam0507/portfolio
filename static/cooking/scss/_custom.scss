@@ -1,5 +1,5 @@
 @import "customVariable";
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 // scss type 1 
     .white{
         color:white;
@@ -64,14 +64,14 @@ a{
  .raised{
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
         &:hover{
-            box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.4); 
         }
     }
 //
 //body
 //
 body{
-    font-family: 'roboto';
+    font-family: 'Roboto';
     background: url('../../assets/image/my-site.png')
 }
 // header
@@ -101,6 +101,7 @@ body{
 }
 }
 #header{
+      
     background: $headerColor;
     pointer-events: auto;
     // background: pink;
@@ -144,9 +145,10 @@ body{
                 padding-top: 100px;
                 padding-left: 50px;
                 .quote{
+                    font-family: sans-serif;
                     font-size:60px;
                     color:white;////
-                    font-weight: 300;
+                    font-weight: 100;
                     margin-bottom: 0;
                 }
             }
