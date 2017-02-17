@@ -160,11 +160,3 @@ class SideNav {
 new SideNav();
 
 
-fetch('../../assets/image/my-site.png').then(function(img){
-  console.log('image loaded');
-  // console.log(this);
-  // console.log(img);
-  document.getElementsByTagName('body')[0].style.backgroundImage='url(' +img.url+')';
-},function(err){
-  console.log(err);
-})
