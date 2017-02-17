@@ -2060,7 +2060,8 @@ a {
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.4); }
 
 body {
-  font-family: 'roboto'; }
+  font-family: 'roboto';
+  background: url("../../assets/image/my-site.png"); }
 
 @media (max-width: 720px) {
   #header.open {
