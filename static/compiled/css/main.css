@@ -2006,6 +2006,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .white {
   color: white; }
 
+.noScroll {
+  overflow: hidden !important; }
+
 .flex {
   display: -ms-flexbox;
   display: flex; }

@@ -4,6 +4,9 @@
     .white{
         color:white;
     }
+.noScroll{
+    overflow: hidden!important;
+}
 .flex{
     display: flex;  
     &.center{

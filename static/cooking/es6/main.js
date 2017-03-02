@@ -143,6 +143,7 @@ class SideNav {
   }
 
   showSideNav () {
+    document.body.classList.add('noScroll');
     this.sideNavEl.classList.add('side-nav--animatable');
     this.sideNavEl.classList.add('side-nav--visible');
     this.detabinator.inert = false;
@@ -150,6 +151,7 @@ class SideNav {
   }
 
   hideSideNav () {
+    document.body.classList.remove('noScroll');
     this.sideNavEl.classList.add('side-nav--animatable');
     this.sideNavEl.classList.remove('side-nav--visible');
     this.detabinator.inert = true;
