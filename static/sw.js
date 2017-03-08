@@ -28,7 +28,7 @@ var config = {
         'compiled/js/main.js',
         '/anything'
     ],
-    defaultHandler: "cacheFirst",
+    defaultHandler: "fastest",
     navigationFallBack:'/anything'
 }
 // console.log('i am service worker');
