@@ -14,6 +14,7 @@
 
 'use strict';
 
+ var ver ='0.0.0';
 importScripts('compiled/js/notify-sw.js');
 
 var config = {
