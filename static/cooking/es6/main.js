@@ -161,4 +161,12 @@ class SideNav {
 
 new SideNav();
 
+(function(){
+  if(navigator.serviceWorker){
+    navigator.serviceWorker.register('sw.js',{scope:'/'}).then(function(res){
+      console.log('service worker registration successfull');
+    })
+  }
+})();
+
 
