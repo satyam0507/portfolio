@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) 
  */
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -2005,6 +2006,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .white {
   color: white; }
 
+.noScroll {
+  overflow: hidden !important; }
+
 .flex {
   display: -ms-flexbox;
   display: flex; }
@@ -2060,7 +2064,7 @@ a {
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.4); }
 
 body {
-  font-family: 'roboto';
+  font-family: 'Roboto';
   background: url("../../assets/image/my-site.png"); }
 
 @media (max-width: 720px) {
@@ -2109,9 +2113,10 @@ body {
       padding-top: 100px;
       padding-left: 50px; }
       .main-container #about .quoteContainer .quote {
+        font-family: sans-serif;
         font-size: 60px;
         color: white;
-        font-weight: 300;
+        font-weight: 100;
         margin-bottom: 0; }
   .main-container #work {
     min-height: 540px;
